@@ -1,130 +1,130 @@
-# Professional Expectations Analysis Project
+# Projet d'Analyse des Attentes Professionnelles
 
-This project analyzes professional expectations and preferences using survey data. The analysis includes demographic breakdowns, professional priorities by gender and socioprofessional categories, and preferences for independence in professional activities.
+Ce projet analyse les attentes et préférences professionnelles à partir de données d'enquête. L'analyse inclut des décompositions démographiques, les priorités professionnelles selon le genre et les catégories socioprofessionnelles, ainsi que les préférences pour l'indépendance dans les activités professionnelles.
 
-This project is implemented using **R** with a focus on data cleaning, descriptive statistics, and visualization.
-
----
-
-## Features
-
-- **Data Cleaning**: Handles missing values and converts character variables to factors.
-- **Descriptive Statistics**:
-  - Age distribution.
-  - Gender breakdown.
-  - Socioprofessional categories of parents.
-- **Professional Expectations Analysis**:
-  - Priorities by gender.
-  - Expectations by socioprofessional categories.
-- **Visualization**:
-  - Bar charts for frequencies and priorities.
-  - Scatter plots for correlations.
-- **Custom Visualizations**: Highlights trends and relationships between survey questions.
+Ce projet est réalisé en utilisant **R**, avec un accent sur le nettoyage des données, les statistiques descriptives et la visualisation.
 
 ---
 
-## Project Structure
+## Fonctionnalités
+
+- **Nettoyage des données** : Gère les valeurs manquantes et convertit les variables caractères en facteurs.
+- **Statistiques descriptives** :
+  - Distribution par âge.
+  - Répartition par genre.
+  - Catégories socioprofessionnelles des parents.
+- **Analyse des attentes professionnelles** :
+  - Priorités par genre.
+  - Attentes selon les catégories socioprofessionnelles.
+- **Visualisation** :
+  - Graphiques en barres pour les fréquences et priorités.
+  - Nuages de points pour les corrélations.
+- **Visualisations personnalisées** : Met en évidence les tendances et relations entre les questions de l'enquête.
+
+---
+
+## Structure du projet
 
 ```
-📁 Project Folder
-├── data_questio.csv               # Dataset for analysis
-├── etude.py                       # Python script for extended data processing
-├── main.py                        # Main R script for data analysis
-├── README.md                      # Project documentation
+📁 Dossier du projet
+├── data_questio.csv               # Jeu de données pour l'analyse
+├── etude.py                       # Script Python pour le traitement avancé des données
+├── main.py                        # Script principal R pour l'analyse des données
+├── README.md                      # Documentation du projet
 ```
 
 ---
 
 ## Installation
 
-### Requirements
-This project requires **R** and the following R libraries:
+### Prérequis
+Ce projet nécessite **R** et les bibliothèques R suivantes :
 - `tidyverse`
 - `ggplot2`
 
-### Steps
-1. Install R from [CRAN](https://cran.r-project.org/).
-2. Install the required packages in R:
+### Étapes
+1. Installez R depuis [CRAN](https://cran.r-project.org/).
+2. Installez les bibliothèques requises dans R :
    ```R
    install.packages(c("tidyverse", "ggplot2"))
    ```
 
 ---
 
-## Usage
+## Utilisation
 
-### Running the Analysis
-1. Ensure `data_questio.csv` is in the working directory.
-2. Run the script `main.py` in RStudio or your preferred R environment:
+### Exécution de l'analyse
+1. Assurez-vous que `data_questio.csv` se trouve dans le répertoire de travail.
+2. Exécutez le script `main.py` dans RStudio ou votre environnement R préféré :
    ```R
    source("main.py")
    ```
 
 ---
 
-## Key Outputs
+## Principaux résultats
 
-1. **Age Distribution**:
-   - Frequency table and bar chart of age groups.
+1. **Distribution par âge** :
+   - Tableau de fréquences et graphique en barres des groupes d'âge.
    
-2. **Gender Priorities**:
-   - Bar charts showing professional expectations by gender.
+2. **Priorités par genre** :
+   - Graphiques en barres montrant les attentes professionnelles selon le genre.
    
-3. **Socioprofessional Categories**:
-   - Distribution of respondents' parents' socioprofessional categories.
-   - Professional expectations by socioprofessional background.
+3. **Catégories socioprofessionnelles** :
+   - Répartition des catégories socioprofessionnelles des parents des répondants.
+   - Attentes professionnelles selon l'origine socioprofessionnelle.
 
-4. **Correlation Insights**:
-   - Scatter plot between initial and current professional clarity.
+4. **Corrélation** :
+   - Nuage de points entre la clarté initiale et actuelle des objectifs professionnels.
 
-5. **Independence Preferences**:
-   - Bar chart of preferences for independent professional activities.
+5. **Préférences pour l'indépendance** :
+   - Graphique en barres des préférences pour des activités professionnelles indépendantes.
 
-6. **Corporate Values Sensitivity**:
-   - Distribution of values respondents are most sensitive to in corporate policies.
-
----
-
-## Visualizations
-
-- **Bar Charts**: Represent distribution and frequencies.
-- **Scatter Plots**: Highlight correlations between variables.
-- **Grouped Bar Charts**: Compare professional priorities across groups.
+6. **Valeurs sensibles** :
+   - Distribution des valeurs auxquelles les répondants sont le plus sensibles dans les politiques d'entreprise.
 
 ---
 
-## Data Cleaning Process
+## Visualisations
 
-1. **Column Renaming**: Removes special characters and spaces from column names.
-2. **Missing Values**: Drops rows with missing data.
-3. **Data Transformation**: Converts character columns to factors.
-
----
-
-## Contributing
-
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Open a pull request.
+- **Graphiques en barres** : Représentent la distribution et les fréquences.
+- **Nuages de points** : Mettent en évidence les corrélations entre les variables.
+- **Graphiques en barres groupées** : Comparent les priorités professionnelles entre groupes.
 
 ---
 
-## License
+## Processus de nettoyage des données
 
-This project is licensed under the MIT License.
+1. **Renommage des colonnes** : Supprime les caractères spéciaux et les espaces des noms de colonnes.
+2. **Valeurs manquantes** : Supprime les lignes contenant des valeurs manquantes.
+3. **Transformation des données** : Convertit les colonnes de type caractère en facteurs.
+
+---
+
+## Contributions
+
+Les contributions sont les bienvenues ! Pour contribuer :
+1. Forkez le dépôt.
+2. Créez une branche pour vos modifications.
+3. Commitez vos changements.
+4. Ouvrez une pull request.
+
+---
+
+## Licence
+
+Ce projet est sous licence MIT.
 
 ---
 
 ## Contact
 
 **Shimwa Galille**  
-[GitHub Profile](https://github.com/Shimwa-Galille)
+[Profil GitHub](https://github.com/Shimwa-Galille)
 
 ---
 
-## Acknowledgements
+## Remerciements
 
-- The project leverages R packages like `tidyverse` and `ggplot2` for data manipulation and visualization.
+- Le projet utilise les bibliothèques R `tidyverse` et `ggplot2` pour la manipulation et la visualisation des données.
 
