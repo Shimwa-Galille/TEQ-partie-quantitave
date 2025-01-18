@@ -1,0 +1,1 @@
+# TEQ-partie-quantitave
